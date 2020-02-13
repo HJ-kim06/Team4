@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/aee9d614ed.js" crossorigin="anonymous"></script>
+  <style>
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1> JavaScript </h1>
+    <p> Programming Language </p>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <a href="HTML.html">html5</a>
+    <a href="CSS.html">css</a>
+    <a href="JS.html">javascript</a>
+  </div>
+
+  <div class="row">
+    <div class="column side">
+      <h2> JavaScript 소개 </h2>
+      <p> 자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. </p> 
+      <p>또한 Node.js와 같은 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있다. 자바스크립트는 본래 넷스케이프 커뮤니케이션즈 코퍼레이션의 브렌던 아이크(Brendan Eich)가 처음에는 모카(Mocha)라는 이름으로, 나중에는 라이브스크립트(LiveScript)라는 이름으로 개발하였으며, 최종적으로 자바스크립트가 되었다.</p>
+    </div>
+    <div class="column middle">
+      <h3> JavaScript 기본 문법 </h3>
+      <h4> 1. 변수 </h4>
+      <p> 자바 스크립트에는 변수형(int, double, String 등)이 존재하지 않는다. var이라는 가변형 변수만 존재하여 초기화 할 때 형태에 따라서 알아서 할당된다.</p>
+      <p> var i;</p> <p> var x = 123;</p> <p> var y = "123"</p> 
+      <p> var z = false </p> <p> var w = null; </p>
+
+      <h3> 2. 연산자 </h3>
+      <p> +,-,*,/,% 등의 기본 연산은 물론 ++,--와 같은 증감 연산자도 사용할 수 있다. </p>
+      <p> a = a + 1 (x)</p> <p> a += 1(o) </p>
+      <p> 자바와 마찬ㄴ가지로 스트링 컨케트 네이션이 되어 문자열을 덧셈기호로 간단히 붙힐 수 있다. </p>
+      <p> var s = "String1" + "String2"; </p>
+      <p> document.write(s); </p>
+
+      <h3> 3. 조건문 </h3>
+      <p> a==b </p> <p> a!=b </p> <p> a==b && a==c </p> <p> a==b || a==c </p>
+      <p> a > b </p> <p> .... </p>
+      <p> if(a>b) { </p> <p> document.write("a is more than b."); </p> <p> }</p>
+
+      <h3> 4. 함수 </h3>
+      <p> function send() { </p> <p> alert('send'); </p> <p> } </p> <p> send(); </p>
+
+      <p><a href="https://baejino.com/programing/javascript/basic"> 출처 : JS기본 문법 </a></p>
+    </div>
+    <div class="column side">
+      <img src="javascript.jfif">
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyright ⓒ 2018 BitCamp Java 521 Team4 .co.,Ltd. All rights reserved. Contact webmaster for more information. 010-3080-8433</p>
+  </div>
+  
+
+</body>
+</html>

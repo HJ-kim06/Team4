@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/aee9d614ed.js" crossorigin="anonymous"></script>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+/* clear:both >> float:left,right 속성을 해제함
+   display: table >> table 요소처럼 표현함 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+ 
+<div class="header">
+  <h1> HTML5, CSS3, JavaScript 기초 </h1>
+  <p>HTML5, CSS3, JavaScript만으로 무엇이든 만들 수 있습니다. </p>
+</div>
+ 
+<div class="topnav">
+  <a href="index.html"><i class="fas fa-home"></i></a>
+  <a href="HTML.html">html5</a>
+  <a href="CSS.html">css</a>
+  <a href="JS.html">javascript</a>
+</div>
+ 
+<div class="row">
+  <div class="column side">
+    <h2>추천 책</h2>
+    <p> ## 명품 HTML5+CSS3+JavaScript 웹 프로그래밍</p>
+    <img src="webbook.jpg">
+
+  </div>
+  <div class="column middle">
+    <h2> # 추천 스터디 사이트 (이미지를 누르면 해당 사이트로 이동합니다.) </h2>
+    <a href="https://www.w3schools.com/"> <img src="w3school.png" width="300px" height="300px"> </a>
+    <a href="https://poiemaweb.com/"> <img src="poiemaweb.jpg" width="300px" height="300px"> </a>
+
+    <h2> # 추천 에디터 (이미지를 누르면 해당 사이트로 이동합니다.)</h2>
+    <a href="https://atom.io"> <img src="atom.png" width="400px" height="300px"></a>
+
+    <a href="https://www.sublimetext.com/3"> <img src="sublimetext.png" width="320px" height="300px"></a>
+    
+  </div>
+  <div class="column side">
+    <img src="html5img.jpg" width="300px" height="200px">
+    <img src="css3img.jpg"width="300px" height="200px">
+    <img src="javascriptimg.png"width="300px" height="200px">
+    <img src="Web.jfif"width="300px" height="200px">
+  </div>
+</div>
+ 
+<div class="footer">
+  <p>Copyright ⓒ 2018 BitCamp Java 521 Team4 .co.,Ltd. All rights reserved. Contact webmaster for more information. 010-3080-8433</p>
+
+</div>
+  
+
+</body>
+</html>

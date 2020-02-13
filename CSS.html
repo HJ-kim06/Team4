@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/aee9d614ed.js" crossorigin="anonymous"></script>
+  <style>
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1> CSS3 </h1>
+    <p> Style sheet Language </p>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <a href="HTML.html">html5</a>
+    <a href="CSS.html">css</a>
+    <a href="JS.html">javascript</a>
+  </div>
+
+  <div class="row">
+    <div class="column side">
+      <h2> CSS3 소개 </h2>
+      <p> 웹 문서의 전반적인 스타일을 미리 저장해 둔 스타일시트이다. 문서 전체의 일관성을 유지할 수 있고, 세세한 스타일 지정의 필요를 줄어들게 하였다.</p>
+
+      <p> 기존의 HTML은 웹 문서를 다양하게 설계하고 수시로 변경하는데 많은 제약이 따르는데, 이를 보완하기 위해 만들어진 것이 스타일 시트이고 스타일 시트의 표준안이 바로 CSS이다. 간단히 스타일 시트라고도 한다.</p>
+
+      <p> <a href="http://kakoku.dothome.co.kr/web/css3.html"> 출처 : CSS3 소개</a></p>
+
+    </div>
+    <div class="column middle">
+      <h3> CSS3 속성 </h3>
+      <h4> 1. 가시상태 속성 </h4>
+      <h5> 1) 단위 </h5>
+      <p> px,pt : 절대값 </p>
+      <p> em : 상대값 </p>
+
+      <h5> 2) diplay </h5>
+      <p> none : 브라우저 화면에서 HTML 요소를 제거 </p>
+      <p> block : HTML요소를 block 타입으로 출력 </p>
+      <p> inline : HTML요소를 inline 타입으로 출력 </p>
+      <p> inline-block : inline과 비슷한데, 넓이값과 높이를 가질 수 있다. </p>
+
+      <h5> 3) visibility </h5>
+      <p> visible : 보인다 </p>
+      <p> hidden : 안보이는데 공간은 유지 </p>
+
+      <h5> 4) opcity </h5>
+      <p> 0.0 : 투명 </p>
+      <p> 1.0 : 불투명 </p>
+
+      <h4> 2. 레이아웃 속성 </h4>
+      <h5> 1) width & height </h5>
+      <p> px : 절대적인 값 </p>
+      <p> % : 가중치에 따른 % </p>
+
+      <h5> 2) margin & padding </h5>
+      <p> margin : 외곽여백 </p>
+      <p> margin-top / right / bottom / left </p>
+      <p> padding : 내부 여백 </p>
+      <p> padding-top / right / bottom / left </p>
+
+      <h4> 3. 테두리 관련 속성 </h4>
+      <p> box-sizing : border-box(html 요소 내부에 위치)와 content-box(html 요소 외부에 위치) 테두리의 위치설정 </p>
+      <p> border-width : 테두리 두께 </p>
+      <p> border-style : solid(실선), dashed(점선)</p>
+      <p> border-color : 테두리 색상 </p>
+      <p> border-radius : 테두리 라운딩 </p>
+
+      <h4> 4. 배경 관련 속성 </h4>
+      <p> bakcground-image : url('https://m.nav~~~') 이미지 위치저어보로 가져오기 </p>
+      <p> background-size : % | px </p>
+      <p> background-repeat : no-reapeat | repeat </p>
+      <p> background-attachment : fixed; </p>
+      <p> <a href="https://blog.geusan.com/38"> 출처 : CSS3 기본 속성 </a></p>
+    </div>
+    <div class="column side">
+      <img src="CSS3.png">
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyright ⓒ 2018 BitCamp Java 521 Team4 .co.,Ltd. All rights reserved. Contact webmaster for more information. 010-3080-8433</p>
+
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/aee9d614ed.js" crossorigin="anonymous"></script>
+  <style>
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+h3{
+  line-height: 30px;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1> HTML5 </h1>
+    <p> Markup Language </p>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <a href="HTML.html" onclick="htmlColor()">html5</a>
+    <a href="CSS.html">css</a>
+    <a href="JS.html">javascript</a>
+  </div>
+
+  <div class="row">
+    <div class="column side">
+      <h2> HTML5 소개 </h2>
+      <p>HTML5는 HTML의 완전한 5번째 버전으로 월드 와이드 웹 (World Wide Web)의 핵심 마크업 언어이다. </p>
+      <p>2004년 7월 Web Hypertext Application Technology Working Group(WHATWG)에서 웹 애플리케이션 1.0이라는 이름으로 세부 명세 작업을 시작하였다.</p>
+      <p> 출처 : <a href="https://ko.wikipedia.org/wiki/HTML5"> 위키백과 : HTML5 </a> </p>
+    </div>
+    <div class="column middle">
+      <h2> &#35; HTML5 기본 태그 정리 </h2>
+
+      <h3> &#35; &lt;!DOCTYPE html&gt; </h3>
+       <p> HTML5임을 브라우저에게 지시하며 맨 첫줄에 선언 </p>
+
+      <h3> &#35; &lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;body&gt; </h3>
+      <p> 1) HEAD : CSS스타일, 자바스크립트, 메타태그들이 위치 </p>
+      <p> 2) BODY : 자바스크립트 코드를 포함 할 수 있으며 HTML 구조 및 내용</p> 
+      <p> 3) TITLE : 웹페이지의 제목으로서 브라우저의 상단 바에 출력되며 HEAD내에 작성 </p>
+
+      <h3> &#35; 주석문 </h3>
+      <p> &lt;&#33;&#45;&#45;HTML문서에서의 주석문 형식&#45;&#45;&gt; : 브라우저에 출력되지 않음 </p>
+
+      <h3> &#35; 본문 소제목 태그 </h3>
+      <p> &lt;h1&gt;&lt;&#47;h1&gt;부터 &lt;h6&gt;&lt;&#47;h6&gt;까지 6단계의 소제목을 표현 한다.</p>
+      
+      <h3> &#35; 단락 태그 </h3>
+      <p> &lt;p&gt;&lt;&#47;p&gt; paragraph의 p로 표현하며 스타일 태그를 사용해서 단락 단위로 본문 모양을 바꿀 수 있으며 단락 태그가 끝나면 자동으로 공백줄이 만들어진다. </p>
+
+      <h3> &#35; hr 태그 </h3>
+      <p> &lt;hr&gt; 수평선을 삽입 할 수 있으며 종료 태그가 없어 닫지 않아도 된다. </p>
+
+      <h3> &#35; 엔터키, 줄 바꿈 하기 </h3>
+      <p> HTML 문서에는 엔터키를 수 차례 입력해도 하나의 공백으로만 표현되고 줄넘길이 되지 않으며 &lt;br&gt;태그를 사용해서 줄넘김을 표현한다.</p>
+
+      <p> 출처 : <a href="https://tbbrother.tistory.com/84"> HTML5 기본 태그 정리 </a></p>
+    </div>
+    <div class="column side">
+      <img src="HTML5.png">
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Copyright ⓒ 2018 BitCamp Java 521 Team4 .co.,Ltd. All rights reserved. Contact webmaster for more information. 010-3080-8433</p>
+
+  </div>
+<script type="text/javascript" src="html.js"></script>
+</body>
+</html>
